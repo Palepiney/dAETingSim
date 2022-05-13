@@ -1,4 +1,5 @@
 ﻿label chapter04_game:
+# Game development path.
 
     $ points = 0
 
@@ -133,7 +134,5 @@ label after_october_reaction4:
 
     "You have a productive afternoon playtesting and you’re ready for project launch! How could the semester be over already?"
 
-    # This ends the game.
-
     $ points = 0
-    return
+    jump chapter07_dec

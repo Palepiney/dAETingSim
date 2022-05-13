@@ -1,5 +1,5 @@
 ﻿label chapter02_music:
-
+# Music path
     $ points = 0
 
     scene september with fade

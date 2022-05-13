@@ -1,4 +1,5 @@
 ﻿label chapter06_plai:
+# Projection and lighting path.
 
     $ points = 0
 
@@ -221,7 +222,5 @@ label after_october_reaction6:
     hide champ with dissolve
     "Even when you both wrap up your work for the night, Champ wants to stay and fiddle with the Hog board for a little while. Considering how passionate he and your friends are now, you can’t wait to see what the rest of your time in AET holds."
 
-    # This ends the game.
-
     $ points = 0
-    return
+    jump chapter07_dec

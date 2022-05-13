@@ -1,4 +1,5 @@
 ﻿label chapter03_story:
+# Storytelling path.
 
     $ points = 0
 
@@ -6,7 +7,7 @@
     scene september with fade
     pause 4.0
 
-    scene bg foundry with fade
+    scene foundry entrance with fade
 
     "You meet Elaine at the library to discuss a loose production schedule for
     your interactive gaming experience."
@@ -85,7 +86,7 @@
     scene october with fade
     pause 4.0
 
-    scene bg foundry with fade
+    scene foundry entrance with fade
 
     hide elaine with dissolve
     "It’s October. You know what that means…."
@@ -166,7 +167,7 @@ label after_october_reaction3:
     scene november with fade
     pause 4.0
 
-    scene bg foundry with fade
+    scene foundry entrance with fade
 
     "The semester is coming to a close."
 
@@ -311,7 +312,5 @@ label after_october_reaction3:
     "You nod and help Elaine with clean up. All you had left was the freshman
     showcase itself, and your first semester at UT would be in the books. Where has the time gone?"
 
-    # This ends the game.
-
     $ points = 0
-    return
+    jump chapter07_dec

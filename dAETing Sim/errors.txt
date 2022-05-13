@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Chapter7_DEC.rpy", line 61: expected statement.
-    renpy.pause()
-                 ^
+File "game/Chapter1_AUG.rpy", line 2: expected statement.
+    ﻿label chapter01:
+                    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu May 12 13:01:39 2022
+Fri May 13 14:53:10 2022

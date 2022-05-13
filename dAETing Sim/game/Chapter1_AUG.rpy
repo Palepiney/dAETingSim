@@ -1,4 +1,5 @@
 ﻿label chapter01:
+# Chapter 1
 
 menu start_menu:
 
@@ -8,26 +9,20 @@ menu start_menu:
         "Here goes nothing..."
 
     "Go back home.":
+        # Returns to the main menu.
          $ MainMenu(confirm=False)()
 
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
 
 label after_start:
 
+    # Shows the foundry.
     scene foundry entrance with fade
 
+    # Starts the background music.
     play music "audio/Idle_Theme_v1_by_John_T_Chambers.mp3" fadein 1.0
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    # show eileen happy
-
-    # These display lines of dialogue.
+    # These display lines of dialogue. {w} means wait for player input or for seconds.
 
     "You’ve only seen pictures of the inside of DFA until now, and it does not
         disappoint."
@@ -57,6 +52,7 @@ label after_start:
     "Your classroom is waiting for you at the top of the stairs. No time to think
     about how overwhelming this all is, just gotta go for it."
 
+    # Switch to classroom scene.
     scene classroom with fade
 
     "First ever AET class.{w} Starting right now.{w} In this room.{w} Holy cow."
@@ -78,7 +74,7 @@ label after_start:
     "He paused like he expected you to react.  Besides the scattered awkward smile,
     no one reacted as strongly as Steve intended."
 
-    # cough
+    # Play cough SFX.
     play sound "audio/THE_dATEingSim_Cough-005.WAV"
     "With an awkward cough, he moved on."
 
@@ -95,6 +91,7 @@ label after_start:
 
     st "So! {w=0.3}Who here knows what Austin Design Week is?"
 
+    # Play shuffling sound.
     play sound "audio/THE_dATEingSim_ShufflingOfPeopleAndChairs.WAV" fadein 1.0
     "Silence."
 
@@ -140,6 +137,7 @@ label after_start:
     "You’ve only ever made things for yourself, and you have no idea if you’re
         even actually all that good."
 
+# Choice
 menu adw_reaction:
 
     "This is going to be a trainwreck.":
@@ -312,14 +310,13 @@ label after_adw_reaction:
 
     "Oh boy."
 
-    # insert name and city
-
     "A chorus of stinted nice-to-meet-you’s rang out. This is weird. Is it always
         this weird? Is it bad that it’s this weird? Are you just weird?"
 
     j " Let’s get into the thing so we don’t have to think about it after this
         class is over. Y’all got any ideas? What do we want our project to be?"
 
+    # Choice
     menu project_idea:
 
         "Speak up right away.":
@@ -347,7 +344,7 @@ label after_adw_reaction:
 
     "Wait, what are you gonna do?"
 
-    # path choice
+    # This specifies player's path choice.
     $ path_name = "0"
 
     menu path_choice:
@@ -402,7 +399,7 @@ label after_adw_reaction:
     "Day one, in the bag! See, that wasn’t so hard! Now, time to get to work and
         make this the best group project you can!"
 
-    # This ends the game.
+    # Determines which chapter to jump to based on player's choice.
 
     if path_name == "Todd":
         jump chapter02_music

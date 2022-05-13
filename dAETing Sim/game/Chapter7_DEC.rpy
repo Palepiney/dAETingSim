@@ -1,4 +1,5 @@
 ﻿label chapter07_dec:
+# ADW and final Chapter.
 
     $ points = 0
     play music "audio/showcase_theme_moc2_by_John_T._Chambers.mp3"
@@ -37,6 +38,11 @@
 
     hide todd
     hide johnny
+    hide elaine
+    hide faith
+    hide johnny
+
+
     show elaine smile at halfleft with dissolve
     e"It feels so good to be done."
 

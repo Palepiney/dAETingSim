@@ -1,4 +1,5 @@
 ﻿label chapter05_art:
+# Artist path.
 
     $ points = 0
 
@@ -201,7 +202,5 @@ label after_october_reaction5:
     scene foundry entrance with fade
     "You and Faith save your work. She emails hers to Champ while you pack your flash drive and prepare to go downstairs and print a few flyers. You say goodbye and end your last workday of the semester. The festival is just around the corner. Time flys…"
 
-    # This ends the game.
-
     $ points = 0
-    return
+    jump chapter07_dec
